@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wacth&Read — Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <div class="marca">
+        <h1>Wacth&Read</h1>
+        <p class="tag">Organize Séries, Filmes e Livros com facilidade</p>
+      </div>
+
+      <button class="botao-menu" aria-label="Abrir menu">☰</button>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="ativo">Dashboard</a></li>
+          <li><a href="series/">Séries</a></li>
+          <li><a href="filmes/">Filmes</a></li>
+          <li><a href="livros/">Livros</a></li>
+          <li><a href="relatorios/">Relatórios</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+          <li><a href="auth/login.html">Entrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+    <!-- INTRODUÇÃO -->
+    <section class="introducao">
+      <h2>Organize suas Séries, Filmes e Livros</h2>
+      <p>
+        Registre o que você já viu e leu, acompanhe o progresso e consulte estatísticas rápidas.
+      </p>
+    </section>
+
+    <!-- AÇÕES -->
+    <section class="acoes">
+      <a href="series/add.html" class="botao">➕ Adicionar Série</a>
+      <a href="filmes/add.html" class="botao">➕ Adicionar Filme</a>
+      <a href="livros/add.html" class="botao">➕ Adicionar Livro</a>
+      <a href="relatorios/" class="botao ghost">📊 Ver Relatórios</a>
+    </section>
+
+    <!-- CARTÕES RESUMO -->
+    <section class="cartoes">
+      <article class="cartao">
+        <h3>Séries</h3>
+        <p class="valor-grande">0</p>
+        <p class="texto-claro">Concluídas / Em andamento</p>
+      </article>
+
+      <article class="cartao">
+        <h3>Filmes</h3>
+        <p class="valor-grande">0</p>
+        <p class="texto-claro">Vistos este mês</p>
+      </article>
+
+      <article class="cartao">
+        <h3>Livros</h3>
+        <p class="valor-grande">0</p>
+        <p class="texto-claro">Lidos / Lendo</p>
+      </article>
+
+      <!-- CARTÃO: EM ANDAMENTO -->
+      <article class="cartao cartao-destaque">
+        <h3>Em andamento</h3>
+        <ul class="lista-em-andamento">
+          <li><strong>Exemplo Série:</strong> Em andamento</li>
+          <li><strong>Exemplo Filme:</strong> Assistindo</li>
+          <li><strong>Exemplo Livro:</strong> Lendo</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PROGRESSO MENSAL -->
+    <section class="grade">
+      <div class="painel">
+        <header class="cabecalho-painel">
+          <h3>Progresso mensal</h3>
+          <small>Variação de consumo por tipo</small>
+        </header>
+        <div class="corpo-painel">
+          <p>Aqui ficará registrado seu progresso mensal.</p>
+        </div>
+      </div>
+
+      <div class="painel">
+        <header class="cabecalho-painel">
+          <h3>Últimos adicionados</h3>
+          <small>Últimas séries/filmes/livros cadastrados</small>
+        </header>
+        <div class="corpo-painel">
+          <ul class="lista-recente">
+            <li><strong>Exemplo Série</strong> — Em andamento</li>
+            <li><strong>Exemplo Filme</strong> — Visto</li>
+            <li><strong>Exemplo Livro</strong> — Lendo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Wacth&Read © 2025 - Organize seu entretenimento pessoal</p>
+    </div>
+  </footer>
+</body>
+</html>

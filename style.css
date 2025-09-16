@@ -1,0 +1,227 @@
+:root{
+  --fundo:#f6f8fb;
+  --cartao:#ffffff;
+  --destaque:#2196f3;
+  --texto-claro:#6b6f76;
+  --largura-max:1100px;
+  --borda-radius:10px;
+}
+
+* { box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  background:var(--fundo);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--largura-max);
+  margin:0 auto;
+  padding:18px;
+}
+
+/* cabeçalho */
+.cabecalho{
+  background:var(--destaque);
+  color:#fff;
+  padding:14px 0;
+}
+.cabecalho-interno{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
+}
+.marca h1{ margin:0; font-size:20px }
+.marca .tag{ margin:0; font-size:13px; opacity:0.95 }
+.botao-menu{
+  display:none;
+  background:transparent;
+  border:0;
+  color:#fff;
+  font-size:22px;
+  cursor:pointer;
+}
+
+/* navegação */
+.nav-principal ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.nav-principal a{
+  color:#fff;
+  text-decoration:none;
+  padding:8px 10px;
+  border-radius:6px;
+}
+.nav-principal a.ativo,
+.nav-principal a:hover{ background:rgba(255,255,255,0.12) }
+
+/* introdução */
+.introducao{ padding:22px 0; text-align:center }
+.introducao h2{ margin:0 0 6px 0; font-size:22px }
+.introducao p{ margin:0; color:var(--texto-claro) }
+
+/* ações */
+.acoes{
+  display:flex;
+  gap:12px;
+  margin:20px 0;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/* cartões */
+.cartoes{
+  display:flex;
+  gap:16px;
+  margin-top:18px;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.cartao{
+  background:var(--cartao);
+  padding:18px;
+  border-radius:var(--borda-radius);
+  box-shadow:0 6px 18px rgba(20,30,45,0.06);
+  flex:1 1 220px;
+  min-width:180px;
+}
+.cartao h3{ margin:0 0 8px 0; font-size:15px }
+.valor-grande{ font-size:20px; margin:0 0 6px 0; font-weight:600 }
+.texto-claro{ color:var(--texto-claro); font-size:13px }
+
+/* destaque lista em andamento */
+.cartao-destaque .lista-em-andamento{
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.cartao-destaque .lista-em-andamento li {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* painel de grid */
+.grade{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:16px;
+  margin-top:18px;
+}
+.painel{
+  background:var(--cartao);
+  padding:14px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(20,30,45,0.06);
+  min-height:160px;
+}
+.cabecalho-painel h3{ margin:0 0 4px 0 }
+.cabecalho-painel small{ color:var(--texto-claro) }
+.corpo-painel{ margin-top:10px }
+
+/* lista recente */
+.lista-recente{ list-style:none; padding:0; margin:0 }
+.lista-recente li{ padding:8px 0; border-bottom:1px solid #f1f1f1; font-size:14px }
+
+/* botões */
+.botao{
+  display:inline-block;
+  background:var(--destaque);
+  color:#fff;
+  text-decoration:none;
+  padding:10px 14px;
+  border-radius:8px;
+  font-weight:600;
+}
+.botao.ghost{
+  background:transparent;
+  color:var(--destaque);
+  border:2px solid rgba(33,150,243,0.12);
+}
+
+/* rodapé */
+.rodape{ padding:20px 0; text-align:center; color:var(--texto-claro) }
+
+/* responsivo */
+@media (max-width:900px){
+  .grade{ grid-template-columns:1fr; }
+  .botao-menu{ display:inline-block }
+  .nav-principal{ display:none }
+  .nav-principal.aberto{ 
+    display:block; 
+    position:absolute; 
+    right:18px; 
+    top:70px; 
+    background:#fff; 
+    color:#222; 
+    border-radius:8px; 
+    box-shadow:0 8px 30px rgba(0,0,0,0.08); 
+    padding:8px; 
+  }
+  .nav-principal.aberto ul{ flex-direction:column; gap:0 }
+  .nav-principal.aberto a{ color:#222; display:block; padding:10px 14px; border-radius:6px }
+}
+
+/* página de contato */
+
+.cartao-contato {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.formulario-contato {
+  width: 100%;
+  max-width: 500px;
+}
+
+.campo-formulario {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-formulario label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  padding: 10px;
+  border-radius: var(--borda-radius);
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+  outline: none;
+  border-color: var(--destaque);
+  box-shadow: 0 0 5px rgba(33,150,243,0.4);
+}
+
+.botao-contato {
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+}
+
+/* responsivo */
+@media (max-width:600px){
+  .cartao-contato {
+    padding: 0 12px;
+  }
+}
