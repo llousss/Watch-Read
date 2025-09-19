@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wacth&Read — Séries</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <div class="marca">
+        <h1>Wacth&Read</h1>
+        <p class="tag">Organize Livros, Filmes e Séries com facilidade</p>
+      </div>
+
+      <button class="botao-menu" aria-label="Abrir menu">☰</button>
+
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html"><b>Dashboard</b></a></li>
+          <li><a href="livros.html"><b>Livros</b></a></li>
+          <li><a href="filmes.html"><b>Filmes</b></a></li>
+          <li><a href="series.html" class="ativo"><b>Séries</b></a></li>
+          <li><a href="relatorios.html"><b>Relatórios</b></a></li>
+          <li><a href="contato.html"><b>Contato</b></a></li>
+          <li><a href="equipe.html"><b>Equipe</b></a></li>
+          <li><a href="auth/login.html"><b>Entrar</b></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+    <section class="introducao">
+      <h2>Minhas Séries</h2>
+      <p>Acompanhe suas séries em andamento, concluídas e pendentes.</p>
+    </section>
+
+  <!-- AÇÕES -->
+  <div class="acoes-geral">
+    <button class="botao"><b>+</b> Adicionar</button>
+    <input type="text" placeholder="Pesquisar Série..." class="barra-pesquisa">
+  </div>
+
+    <!-- TABELA DE LIVROS -->
+    <div class="tabela-container">
+      <table class="tabela-livros">
+        <thead>
+          <tr>
+            <th>Capa</th>
+            <th>Título</th>
+            <th>Gênero</th>
+            <th>Temporada Atual</th>
+            <th>Status</th>
+            <th>Avaliação</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="imagens/shameless-serie.jpg" alt="Shameless" class="capa"></td>
+            <td>Shameless</td>
+            <td>Drama</td>
+            <td>1ª Temporada</td>
+            <td>Em Andamento</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>
+                <button class="btn-acao editar">Editar</button>
+                <button class="btn-acao excluir">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>© 2025 Wacth&Read — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
