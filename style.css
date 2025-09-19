@@ -280,7 +280,7 @@ body{
 }
 
 /* ações de livros */
-.acoes-livros {
+.acoes-geral {
   display: flex;
   justify-content: space-between;
   align-items: center;
