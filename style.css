@@ -9,6 +9,7 @@
 
 * { box-sizing:border-box; }
 
+/* seletor de elemento body */
 body{
   margin:0;
   font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
@@ -17,12 +18,14 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 
+/* seletor de classe */
 .container{
   max-width:var(--largura-max);
   margin:0 auto;
   padding:18px;
 }
 
+/* seletor de classe */
 /* cabeçalho */
 .cabecalho{
   background:var(--destaque);
@@ -35,7 +38,8 @@ body{
   align-items:center;
   justify-content:space-between;
 }
-.marca h1{ margin:0; font-size:20px }
+/* seletor de elemento h1 */
+h1{ margin:0; font-size:20px }
 .marca .tag{ margin:0; font-size:13px; opacity:0.95 }
 .botao-menu{
   display:none;
@@ -64,11 +68,12 @@ body{
 .nav-principal a.ativo,
 .nav-principal a:hover{ background:rgba(255,255,255,0.12) }
 
-/* introdução */
+/* seletor de elemento h2 */
 .introducao{ padding:22px 0; text-align:center }
-.introducao h2{ margin:0 0 6px 0; font-size:22px }
+h2{ margin:0 0 6px 0; font-size:22px }
 .introducao p{ margin:0; color:var(--texto-claro) }
 
+/* seletor de classe */
 /* ações */
 .acoes{
   display:flex;
@@ -78,6 +83,7 @@ body{
   justify-content:center;
 }
 
+/* seletor de classe */
 /* cards */
 .cards{
   display:flex;
@@ -93,6 +99,19 @@ body{
   box-shadow:0 6px 18px rgba(20,30,45,0.06);
   flex:1 1 220px;
   min-width:180px;
+}
+
+/* seletor id */
+#card-equipe{
+  background: var(--card);
+  padding: 18px;
+  border-radius: var(--borda-radius);
+  box-shadow: 0 6px 18px rgba(20,30,45,0.06);
+  width: 400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: auto;
 }
 .card h3{ margin:0 0 8px 0; font-size:15px }
 .valor-grande{ font-size:20px; margin:0 0 6px 0; font-weight:600 }
@@ -111,6 +130,7 @@ body{
   font-size: 14px;
 }
 
+/* seletor de classe */
 /* painel de grid */
 .grade{
   display:grid;
@@ -152,8 +172,8 @@ body{
   border:2px solid rgba(33,150,243,0.12);
 }
 
-/* rodapé */
-.rodape{ padding:20px 0; text-align:center; color:var(--texto-claro) }
+/* seletor de elemento footer */
+footer{ padding:20px 0; text-align:center; color:var(--texto-claro) }
 
 /* responsivo */
 @media (max-width:900px){
