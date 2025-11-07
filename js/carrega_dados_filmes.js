@@ -15,7 +15,7 @@ function carregarFilmesJSON() {
         })
         .catch(error => {
             console.error('Houve um erro ao carregar o catálogo:', error);
-            tabelaCorpo.innerHTML = `<tr><td colspan="5">Erro ao carregar os livros.</td></tr>`;
+            tabelaCorpo.innerHTML = `<tr><td colspan="5">Erro ao carregar os filmes.</td></tr>`;
         });
 
 }
