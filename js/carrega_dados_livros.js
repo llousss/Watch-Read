@@ -28,9 +28,9 @@ function renderizarLivros(livros) {
             <tr> 
                 <td><img src="${livro.imagem.src}" alt="${livro.imagem.alt}" width="70"></td> 
                 <td>${livro.titulo}</td>
-                <td>${livro.Autor}</td>
-                <td>${livro.Status}</td>
-                <td>${livro.Avaliação}</td>
+                <td>${livro.autor}</td>
+                <td>${livro.status}</td>
+                <td>${livro.avaliação}</td>
             </tr> 
         `;
     });
