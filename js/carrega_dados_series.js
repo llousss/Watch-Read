@@ -26,9 +26,10 @@ function renderizarSeries(series) {
     series.forEach(serie => {
         htmlSeries += ` 
             <tr> 
-                <td><img src="${livro.imagem.src}" alt="${serie.imagem.alt}" width="70"></td> 
+                <td><img src="${serie.imagem.src}" alt="${serie.imagem.alt}" width="70"></td> 
                 <td>${serie.titulo}</td>
-                <td>${serie.autor}</td>
+                <td>${serie.genero}</td>
+                <td>${serie.tempat}</td>
                 <td>${serie.status}</td>
                 <td>${serie.avaliação}</td>
             </tr> 
