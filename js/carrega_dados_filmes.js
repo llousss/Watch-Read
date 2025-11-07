@@ -23,7 +23,7 @@ function carregarFilmesJSON() {
 function renderizarFilmes(filmes) {
     let htmlFilmes = '';
 
-    filmes.forEach(filmes => {
+    filmes.forEach(filme => {
         htmlFilmes += ` 
             <tr> 
                 <td><img src="${filme.imagem.src}" alt="${filme.imagem.alt}" width="70"></td> 
