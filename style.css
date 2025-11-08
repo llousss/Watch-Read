@@ -337,22 +337,86 @@ footer{ padding:20px 0; text-align:center; color:var(--texto-claro) }
   color: #fff;
 }
 
-/* NOVO: Classe para o tema escuro */
-.tema-escuro {
-    background-color: #121212 !important; /* !important garante que sobrescreve o CSS do body */
-    color: #f0f0f0;
+/* ===== Correções do Tema Escuro ===== */
+
+/* texto geral */
+.tema-escuro,
+.tema-escuro p,
+.tema-escuro h1,
+.tema-escuro h2,
+.tema-escuro h3,
+.tema-escuro small,
+.tema-escuro label {
+  color: #f0f0f0 !important;
 }
 
-.tema-escuro header, .tema-escuro footer {
-    background-color: #000;
+/* texto secundário */
+.tema-escuro .texto-claro,
+.tema-escuro footer {
+  color: #b0b0b0 !important;
 }
 
-.tema-escuro main {
-    background-color: #2c2c2c;
-    color: #f0f0f0;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+/* cabeçalho e navegação */
+.tema-escuro .cabecalho {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+.tema-escuro .nav-principal a {
+  color: #fff;
+}
+.tema-escuro .nav-principal a:hover,
+.tema-escuro .nav-principal a.ativo {
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.tema-escuro .card {
-    background-color: #636363;
+/* cards e painéis */
+.tema-escuro .card,
+.tema-escuro .painel {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+}
+
+/* botões */
+.tema-escuro .botao {
+  background: #2196f3;
+  color: #fff;
+}
+.tema-escuro .botao.ghost {
+  color: #2196f3;
+  border-color: rgba(33,150,243,0.4);
+}
+
+/* tabelas */
+.tema-escuro .tabela-livros {
+  background: #1f1f1f;
+  color: #f0f0f0;
+}
+.tema-escuro .tabela-livros thead {
+  background: #2196f3;
+}
+.tema-escuro .tabela-livros tbody tr:nth-child(even) {
+  background: #2a2a2a;
+}
+.tema-escuro .tabela-livros tbody tr:hover {
+  background: rgba(33,150,243,0.15);
+}
+
+/* formulários */
+.tema-escuro input,
+.tema-escuro textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border-color: #555;
+}
+.tema-escuro input:focus,
+.tema-escuro textarea:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 5px rgba(33,150,243,0.6);
+}
+
+/* Ajuste das letras da equipe no tema escuro */
+.tema-escuro #card-equipe,
+.tema-escuro #card-equipe li {
+    color: #000000 !important;
 }
